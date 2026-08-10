@@ -1,0 +1,116 @@
+.polyflowline-polymodular {
+    display: grid;
+    gap: 18px;
+    padding: 24px;
+    color: #3b1f26;
+    background: #fff7f7;
+    border: 1px solid #fecdd3;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.polyflowline-polymodular__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.polyflowline-polymodular__title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.polyflowline-polymodular__meta {
+    color: #8f5862;
+    font-size: 0.875rem;
+}
+
+.polyflowline-polymodular__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    color: #ffffff;
+    background: #e11d48;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.metacenter-macrofactor {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    padding: 20px;
+    background: #fff1f2;
+    border-radius: 14px;
+}
+
+.metacenter-macrofactor__item {
+    padding: 18px;
+    background: #fff7f7;
+    border: 1px solid #fecdd3;
+    border-radius: calc(14px - 2px);
+}
+
+.metacenter-macrofactor__value {
+    color: #e11d48;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.metacenter-macrofactor__label {
+    margin-top: 8px;
+    color: #8f5862;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.polysampler-connect {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 14px;
+    padding: 18px;
+    background: #fff7f7;
+    border: 1px solid #fecdd3;
+    border-radius: 14px;
+}
+
+.polysampler-connect__field {
+    display: grid;
+    gap: 6px;
+    min-width: 180px;
+    flex: 1 1 220px;
+}
+
+.polysampler-connect__input {
+    width: 100%;
+    padding: 11px 12px;
+    color: #3b1f26;
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    border-radius: 10px;
+    outline: none;
+}
+
+.polysampler-connect__input:focus {
+    border-color: #e11d48;
+    box-shadow: 0 0 0 3px #ffe4e6;
+}
+
+@media (max-width: 720px) {
+    .polyflowline-polymodular {
+        padding: 16px;
+    }
+    .metacenter-macrofactor {
+        padding: 16px;
+    }
+    .polysampler-connect {
+        padding: 16px;
+    }
+}

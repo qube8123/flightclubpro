@@ -1,0 +1,116 @@
+.woocommerce table.form-table input.wcss-date[type=text] {
+    margin-right: 5px;
+	background-color: white;
+}
+
+.woocommerce table.form-table input.wcss-name[type=text] {
+    display: block;
+    margin: 0 0 15px;
+}
+
+input.wcss-name.is-error {
+    border: 1px solid red;
+}
+
+.add-wcss-outer-wrapper {
+    background: white;
+    display: inline-block;
+    padding: 15px;
+    width: 460px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin-bottom: 15px;
+    margin-right: 15px;
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+.add-wcss-date-wrapper {
+    margin-bottom: 5px;
+}
+
+.wcss-single-date {
+    padding: 2px 6px;
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+
+.wcss-remove {
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+span.wcss-id {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	font-size: 11px;
+	color: #999;
+}
+
+span.wcss-add-schedule {
+    background: white;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    float: left;
+    clear: both;
+}
+
+.add-wcss-outer-wrapper.hide-x .wcss-remove-box{
+    display: none;
+}
+
+.wcss-description {
+    display: block;
+}
+
+.wcss-remove-box {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    padding: 2px;
+    background: white;
+    line-height: 1;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+@media screen and ( max-width: 782px ) {
+    .add-wcss-outer-wrapper {
+        width: calc( 100% - 20px );
+    }
+
+    .woocommerce table.form-table input.wcss-name[type=text],
+    .woocommerce table.form-table input.wcss-date[type=text] {
+        width: 100%;
+    }
+
+    a.wcss-add-btn.button-primary {
+        margin-top: 10px;
+    }
+}

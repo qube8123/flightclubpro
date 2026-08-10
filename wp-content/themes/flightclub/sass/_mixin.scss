@@ -1,0 +1,295 @@
+
+@function vw($target) {
+	// $vw-context: (1366 * 0.01) * 1px;
+	$vw-context: (1383 * 0.01) * 1px;
+	@return ($target / $vw-context) * 1vw;
+	//font-size: vw(80px);
+}
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin pos-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@mixin backgroundProperty {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+// Clearfix
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+// /*
+//  * Mixin for clearfix
+//  * @include clearfix;
+// */
+@mixin clearFix {
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+	*zoom: 1;
+}
+
+// /*
+//  * Apply a CSS3 box-rotate
+//  * @include rotate(10deg);
+//  */
+@mixin rotate($deg) {
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	transform: rotate($deg);
+}
+// /*
+//  * Apply a CSS3 box-rotate
+//  * @include translate(10px,10px);
+//  */
+@mixin translate($x,$y) {
+	-webkit-transform: translate($x,$y);
+	   -moz-transform: translate($x,$y);
+		-ms-transform: translate($x,$y);
+		 -o-transform: translate($x,$y);
+			transform: translate($x,$y);
+}
+// /*
+//  * Apply a CSS3 transform-origin
+//  * @include transform-origin(left top);
+//  */
+ @mixin transform-origin ($origin) {
+	-webkit-transform-origin: $origin;
+	   -moz-transform-origin: $origin;
+		-ms-transform-origin: $origin;
+		 -o-transform-origin: $origin;
+			transform-origin: $origin;
+ }
+ // /*
+ // * Apply a CSS3 transform-origin
+ // * @include backface-visibility(hidden);
+ // */
+ @mixin backface-visibility ($val) {
+	-webkit-backface-visibility: $val;
+	   -moz-backface-visibility: $val;
+		-ms-backface-visibility: $val;
+		 -o-backface-visibility: $val;
+			backface-visibility: $val;
+ }
+// /*
+//  * Apply a CSS3 box-rotate
+//  * @include translateX(10px);
+//  */
+@mixin translateX($x) {
+	-webkit-transform: translateX($x);
+	   -moz-transform: translateX($x);
+		-ms-transform: translateX($x);
+		 -o-transform: translateX($x);
+			transform: translateX($x);
+}
+// /*
+//  * Apply a CSS3 skewX
+//  * @include skewX(10deg);
+//  */
+@mixin skewX($x) {
+	-webkit-transform: skewX($x);
+	   -moz-transform: skewX($x);
+		-ms-transform: skewX($x);
+		 -o-transform: skewX($x);
+			transform: skewX($x);
+}
+// /*
+//  * Apply a CSS3 skewY
+//  * @include skewY(10deg);
+//  */
+@mixin skewY($x) {
+	-webkit-transform: skewY($x);
+	   -moz-transform: skewY($x);
+		-ms-transform: skewY($x);
+		 -o-transform: skewY($x);
+			transform: skewY($x);
+}
+// /*
+//  * Apply a CSS3 box-rotate
+//  * @include translateY(10px);
+//  */
+@mixin translateY($y) {
+	-webkit-transform: translateY($y);
+	   -moz-transform: translateY($y);
+		-ms-transform: translateY($y);
+		 -o-transform: translateY($y);
+			transform: translateY($y);
+}
+// /*
+//  * Apply a CSS3 box-rotate
+//  * @include scale(0);
+//  */
+@mixin scale($val) {
+	-webkit-transform: scale($val);
+	   -moz-transform: scale($val);
+		-ms-transform: scale($val);
+		 -o-transform: scale($val);
+			transform: scale($val);
+}
+// /*
+//  * Apply a CSS3 transition
+//  *
+//  * $property The property you want to animate, eg opacity
+//  * $duration The duration of the animation, eg 1s
+//  * $ms Include -ms-transition; default is false because IE does not support transitionEnd callback
+//  *
+// 	@include transition(all, 0.5s, ease-out);
+//  */
+
+@mixin transition($property, $duration, $easing, $ms: false) {
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+	-o-transition: $property $duration $easing;
+	@if ($ms) {
+		-ms-transition: $property $duration $easing;
+	}
+	transition: $property $duration $easing;
+}
+
+@mixin transitionLong($property, $duration, $easing:ease-in-out, $delay:false) {
+	@include transitionProperty($property);
+	@include transitionDuration($duration);
+
+	@if($delay) {
+		@include transitionDelay($delay);
+	}
+
+	@if($easing) {
+		@include transitionTimingFunction($easing);
+	}
+}
+
+// /*
+//  * Apply a CSS3 transition-delay
+//  * @include transitionDelay(2s);
+//  */
+@mixin transitionDelay($delay) {
+	-webkit-transition-delay: $delay;
+	-moz-transition-delay: $delay;
+	-o-transition-delay: $delay;
+	-ms-transition-delay: $delay;
+	transition-delay: $delay;
+}
+
+// /*
+//  * Apply a CSS3 transition-duration
+//  * @include transitionDuration(1s);
+//  */
+@mixin transitionDuration($duration) {
+	-webkit-transition-duration: $duration;
+	-moz-transition-duration: $duration;
+	-o-transition-duration: $duration;
+	-ms-transition-duration: $duration;
+	transition-duration: $duration;
+}
+
+// /*
+//  * Apply a CSS3 transition-property
+//  * @include transitionProperty(opacity);
+//  * @include transitionProperty((height, width)); Multiple properties can be passed in surrounded by brackets
+//  */
+@mixin transitionProperty($property) {
+	-webkit-transition-property: $property;
+	-moz-transition-property: $property;
+	-o-transition-property: $property;
+	-ms-transition-property: $property;
+	transition-property: $property;
+}
+
+// /*
+//  * Apply a CSS3 transition-timing-function
+//  * @include transitionTimingFunction(easing);
+//  */
+@mixin transitionTimingFunction($easing) {
+	-webkit-transition-timing-function: $easing;
+	-moz-transition-timing-function: $easing;
+	-o-transition-timing-function: $easing;
+	-ms-transition-timing-function: $easing;
+	transition-timing-function: $easing;
+}
+// breakpoints
+
+$S: 480px;
+$M: 768px;
+$L: 1024px;
+
+// media queries
+
+@mixin MQ($canvas) {
+	@if $canvas == S {
+	 @media only screen and (max-width: $S) { @content; }
+	}
+	@else if $canvas == M {
+	 @media only screen and (max-width: $M) { @content; }
+	}
+	@else if $canvas == L {
+	 @media only screen and (max-width: $L) { @content; }
+	}
+	@else {
+		@media only screen and (max-width: $canvas) { @content; }
+	}
+}
+
+
+//@include centerer(true, false);
+@mixin centerer($horizontal: true, $vertical: true) {
+	position: absolute;
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		@include translate(-50%, -50%);
+	} @else if ($horizontal) {
+		left: 50%;
+		@include translate(-50%, 0);
+	} @else if ($vertical) {
+		top: 50%;
+		@include translate(0, -50%);
+	} @else {
+		top: 0;
+		@include translate(0, 0);
+	}
+}
+// link Hover State
+// 	@include hover-state {
+// 		text-decoration: underline;
+// 	}
+@mixin hover {
+	&:hover, &:active {
+		@content;
+	}
+}

@@ -1,0 +1,37 @@
+$browser-context: 16; // Default
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+  // font-size: em(16);
+}
+@import "_font.scss";
+@import "_mixin.scss";
+@import "_resettop.scss";
+@import "_common.scss";
+@import "header";
+@import "footer";
+@import "_home.scss";
+@import "_resetbottom.scss";
+
+@-webkit-keyframes a {
+	0% {
+		stroke-dashoffset: 194
+	}
+	80% {
+		stroke-dashoffset: 0
+	}
+	to {
+		stroke-dashoffset: 0
+	}
+}
+
+@keyframes a {
+	0% {
+		stroke-dashoffset: 194
+	}
+	80% {
+		stroke-dashoffset: 0
+	}
+	to {
+		stroke-dashoffset: 0
+	}
+}

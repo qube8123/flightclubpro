@@ -1,0 +1,133 @@
+footer {
+    @include backgroundProperty;
+    padding-top: 7.3rem;
+    position: relative;
+    &:after {
+        content: '';
+        background-image: url(../img/footer-overlay.png);
+        @include backgroundProperty;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .wrap {
+        z-index: 1;
+    }
+    form {
+        margin-top: 4.6rem;
+        padding-right: 18rem;
+    }
+    .form_group {
+        margin-bottom: 3.5rem;
+        input {
+            color: #fff;
+            font-size: 1.7rem;
+            font-weight: 300;
+            width: 100%;
+            background-color: transparent;
+            padding-bottom: 1.55rem;
+            border-bottom: 1px solid rgba($color: #fff, $alpha: .4);
+            transition: $transition;
+            &:focus {
+                border-bottom: 1px solid rgba($color: #fff, $alpha: .7);
+            }
+        }
+        ::placeholder {
+            color: #fff;
+            opacity: .8;
+            &:focus {
+                opacity: 1;
+            }
+        }
+    }
+    .form-check {
+        margin-bottom: 2.5rem;
+        .form-check-input {
+            top: 0.3rem;
+        }
+        label {
+            color: #fff;
+            font-size: 1.7rem;
+            font-weight: 300;
+            color: #fff;
+            padding-left: 1rem;
+        }
+    }
+    .yellow_btn {
+        padding: 1.5rem 3rem;
+        margin-top: 2.5rem;
+    }
+    .yellow_btn:hover {
+        background-color: #fff;
+        border-color: #fff;
+    }
+}
+.footer_item_title {
+    color: #fff;
+    font-family: $primaryFont;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    padding-bottom: 1.35rem;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 2.8rem;
+        height: 2px;
+        background-color: #fff;
+    }
+}
+
+.ft_block {
+    margin-top: 4.5rem;
+    .ft_list {
+        .ft_item {
+            color: #fff;
+            font-family: $brotherBook;
+            font-size: 1.8rem;
+            display: inline-block;
+            padding: 1rem 0;
+            &:hover {
+                color: $yellow;
+            }
+            span {
+                margin-right: 0.8rem;
+            }
+        }
+    }
+}
+
+.social_media_block {
+    padding: 3rem 0;
+    margin-top: 5.36rem;
+    border-top: 1px solid rgba($color: #fff, $alpha: .39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+    .social_icons {
+        display: flex;
+        align-items: center;
+        li {
+            &:not(:last-child) {
+                margin-right: 2.8rem;
+            }
+            a {
+                color: #fff;
+                transition: all .2s ease-out;
+                &:hover {
+                    color: $yellow;
+                }
+
+            }
+        }
+    }
+}

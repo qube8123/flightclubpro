@@ -1,0 +1,90 @@
+# Copyright (C) 2023 Shop Plugins
+# This file is distributed under the same license as the WooCommerce Subscriptions Schedule plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Subscriptions Schedule 1.0.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-subscriptions-schedule\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-01-11T22:45:38+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: wc-subs-schedule\n"
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Subscriptions Schedule"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://shopplugins.com/plugins/woocommerce-subscriptions-schedule/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds a schedule of delivery for WooCommerce Subscription products."
+msgstr ""
+
+#. Author of the plugin
+msgid "Shop Plugins"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://shopplugins.com"
+msgstr ""
+
+#. translators: This is the label on the schedule settings page.
+#: includes/admin/product-settings.php:31
+#: includes/admin/product-settings.php:87
+msgid "Schedule"
+msgstr ""
+
+#. translators: This the option when no schedule is selected.
+#: includes/admin/product-settings.php:42
+msgid "No Schedule"
+msgstr ""
+
+#. translators: This is the label of the tab in WooCommerce settings.
+#: includes/admin/settings.php:20
+#: includes/admin/settings.php:78
+msgid "Subscriptions Schedule"
+msgstr ""
+
+#: includes/admin/settings.php:80
+msgid "Define subscription schedules below. Each schedule includes a name and renewal dates.<br/>Subscriptions assigned to a schedule will renew only on the dates defined in the schedule."
+msgstr ""
+
+#: includes/admin/settings.php:84
+msgid "Schedules"
+msgstr ""
+
+#: includes/admin/settings.php:109
+msgid "Settings"
+msgstr ""
+
+#. translators: This is the singular term for renewals displayed on the front end.
+#: includes/class-helper-functions.php:312
+#: includes/class-helper-functions.php:514
+msgid "renewal"
+msgstr ""
+
+#. translators: This is the plural term for renewals
+#: includes/class-helper-functions.php:314
+msgid "renewals"
+msgstr ""
+
+#. translators: This is the first time a subscription is charged after the first order.
+#: includes/frontend/class-frontend.php:107
+msgid "First renewal: %s"
+msgstr ""
+
+#. translators: This is a notice that the WooCommerce version does not meet the requirement.
+#: woocommerce-subscriptions-schedule.php:104
+msgid "WooCommerce Subscriptions Schedule requires at least WooCommerce %s in order to function. Please activate or upgrade WooCommerce."
+msgstr ""
+
+#. translators: This is a notice that the WooCommerce Subscriptions version does not meet the requirement.
+#: woocommerce-subscriptions-schedule.php:114
+msgid "WooCommerce Subscriptions Schedule requires WooCommerce Subscriptions version %s or higher. Please activate or update Subscriptions."
+msgstr ""

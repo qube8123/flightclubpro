@@ -1,0 +1,127 @@
+header {
+    &.posfixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        &__logo {
+            margin-top: 3rem;
+            width: 36.4rem;
+        }
+        .nav_items {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            &--profiles, &--menu {
+                ul {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            &--profiles {
+                padding: 2.2rem 0 1rem;
+                transition: $transition;
+                li {
+                    margin-left: 2rem;
+                    &:not(:last-child) {
+                        padding-right: 2rem;
+                        border-right: 1px solid #fff;
+                    }
+                    a {
+                        color: rgba($color: #fff, $alpha: 0.75);
+                        font-family: $brotherBook;
+                        font-size: 1.5rem;
+                        span {
+                            color: #fff;
+                            margin-right: .96rem;
+                        }
+                    }
+                    .phone_btn {
+                        color: #fff;
+                        font-size: 1.4rem;
+                        padding: 1.1rem 2.2rem;
+                        background-color: rgba($color: #fff, $alpha: 0.2);
+                        border-radius: 3px;
+                    }
+                }
+            }
+            &--menu {
+                border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+                transition: $transition;
+                
+                li {
+                    &:not(:last-child) {
+                        margin-right:0;
+                    }
+                    .menu__item {
+                        display: flex;
+                        align-items: center;
+                        padding: 2.5rem 2.9rem;
+                        padding-right: 4rem;
+                        span {
+                            font-size: .5rem;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+                .dropdown {
+                    &.show {
+                        .menu__item  {
+                            background-color: $yellow;
+                        }
+                    }
+                    .dropdown-menu {
+                        width: 100%;
+                        margin: 0;
+                        border-radius: 0;
+                        border: 0;
+                        padding: 3.3rem 3rem;
+                        .dropdown-item {
+                            color: $primaryColor;
+                            font-size: 1.6rem;
+                            font-family: $primaryFont;
+                            padding: 0;
+                            white-space: normal;
+                            &:hover {
+                                background-color: transparent;
+                            }
+                            &:not(:last-child) {
+                                margin-bottom: 2rem;
+                            }
+                        }
+                    }
+                }
+                .menu__item {
+                    color: #fff;
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fixHeader {
+    background-color: rgba($color: $secondaryColor, $alpha: .95);
+    .nav {
+        &__logo {
+            width: 28rem;
+            margin-top: 1rem;
+        }
+        .nav_items {
+            &--profiles {
+                padding-bottom: 0;
+            }
+            &--menu {
+                border: 0;
+                padding-top: 0;
+            }
+        }
+    }
+}

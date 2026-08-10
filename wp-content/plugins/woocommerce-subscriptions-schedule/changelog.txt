@@ -1,0 +1,57 @@
+WooCommerce Subscriptions Schedule
+====================================
+
+2023-01-10 1.0.10
+* Test with WooCommerce 7.
+* Test with WooCommerce Subscriptions 4.7.0.
+* Code cleanup.
+* Fix datetime checking with incorrect format.
+* Compatability with Toolbox for WooCommerce Subscriptions skip functionality.
+
+2022-03-09 1.0.9
+* Updated WP Updater package to 1.0.3.
+* Textdomain changed to wc-subs-schedule
+
+2021-10-05 1.0.8
+* Fix deprecated call to WC()->cart->tax_display_cart
+* Fix period replacement on frontend with the translation if there is one available.
+* Code cleanup.
+* Test with Woocommerce 5.7 and 5.8 beta
+* Tested with WooCommerce Subscriptions 3.1.5
+* Add filter sp_next_payment_time_of_day to let store owners set the time of day for next renewals
+* Updated unit tests.
+
+2021-05-25 1.0.7
+* Add schedule ID to the Subscription Schedule admin page.
+* Fix datepicker text input being updated by WP core.
+* Fix fatal error when subscription with no parent order is saved.
+
+2021-02-10 1.0.6
+* Test with WooCommerce 5.0
+* Add Shortcode [wcss-first-payment-date] to display the next payment date for subscription.
+* Update language pot file.
+
+2020-09-01 1.0.5
+* Fix subscriptions not working when site is set to non-English language.
+* Fix some subscription schedule being applied to non-schedule subscription products.
+
+2019-10-18 1.0.4
+* Added languages pot file.
+* Tested with WooCommerce 3.8
+* PHPCS/BF Fixes including better PHPDoc.
+* Fix - Removing period from email and Thank You page when a schedule is being used.
+* Fix - Do not show checkbox if there are no schedules.
+* Fix - Add note to subscription after first order and renewals.
+* Reorganizing helper class.
+
+2019-09-16 1.0.3
+* Fix - Add prefix to function names that are conflicting with some themes.
+
+2019-05-20 1.0.2
+* Fix for settings not showing up after adding and removing a date then saving.
+
+2019-04-02 1.0.1
+* Added feature to have $0 initial order and first charge happen on next schedule date.
+
+2019-02-01 1.0.0
+* First version

@@ -1,0 +1,448 @@
+/*menu*/
+
+@media screen and (max-width: 991px) {
+	.navbar-toggler {
+	  display: block;
+	}	
+	.trip_section .trip_block {
+	    margin-bottom: 11.5rem;
+	}
+	.list-box ul {
+	    max-height: 250px;
+	    column-count: 2;
+	}
+	.banner_text {
+	    position: absolute;
+	    top: 54%;
+	    left: 25%;
+	    transform: translate(-16%,-51%);
+	}
+	header .nav  ul {
+	    float: none;
+	    display: block!important;
+	    text-align: left;
+	}
+	.check-list-box li {
+	    margin-bottom: 8px;
+	}
+	.work-event .image-left img {
+	    padding-right: 0;
+	}
+	.work-event .image-right img {
+	    padding-left: 0;
+	}
+	.nav_items--profiles {
+	    display: none;
+	}
+	.navbar-toggler {
+	    position: absolute;
+	    top: 8rem;
+	    right: 1.5rem;
+	}
+	.navbar-toggler i{
+		color: #fff;
+		font-size: 2rem;
+	}
+	.fixHeader .navbar-toggler{
+		top: 5rem;
+	}
+	.hero_banner .banner_text h2 {
+    	font-size: 9rem;
+	}
+	.nav_items ul{
+    	background: #fff;
+    	width: 100%;
+	}
+	.nav_items a{
+	    color: #000!important;
+	}
+	.nav_items {
+   		 display: block !important;
+    	width: 100%;
+	}
+	body{
+		overflow-x: hidden; 
+	}
+	.col-md-3 {
+	    -ms-flex: 0 0 33%;
+	    flex: 0 0 33%;
+	    max-width: 33%;
+	}
+	.trip_section .trip_information_block .price_box {
+	    font-size: 2rem;
+	    padding: 1rem 1.5rem;    
+	    margin-bottom: 1.5rem;
+	}
+	.trip_section .trip_information_block .trip_title {
+	    color: #0C151A;
+	    font-size: 2.2rem;
+	    margin-top: 0;
+	    margin-bottom: 0.5rem;
+	    line-height: 1.2;
+	}
+	.yellow_btn {
+	    font-size: 1.3rem;
+	    padding: 1rem 2rem;
+	}
+	.trip_section .trip_information_block {
+	    padding: 1rem;	 
+	    width: 38rem;
+	    top: 34.48276%;
+	    right: 5%;
+	}
+	.why_us_section .about_card p {
+	    font-size: 1.6rem;
+	}
+	p{
+		font-size: 1.6rem;
+	}
+	.program_list.allist li{
+	  width: 50%;
+	}
+	.why_us_section .about_card h3 {
+	    font-size: 2.2rem;
+	}
+	h3 {
+	    font-size: 3.6rem;
+	    padding-bottom: 20px;
+	}
+	.section_box .section_title {
+	    font-size: 2.8rem;
+	}
+	.section_box .section_title::after, .section_box .section_title::before {
+	    top: 30%;
+	}
+	.contact_section .contact_title h2 {
+	    font-size: 10rem;
+	    line-height: 0.8;
+	}
+	.travel_section .section_title {
+	    margin-bottom: 3.4rem;
+	}
+	.section_box .section_title::before {
+	    left: -4.2rem;
+	}
+	.section_box .section_title::after {
+	    right: -4.2rem;
+	}
+	.main {
+    	width: 82%;
+    }
+    #workwithus .col-md-6 {
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	#workwithus .modal-content {
+   	  background-color: #fff;
+      border-radius: 8px;
+	}
+	.modal-body {
+	    padding: 3rem 0.5rem;
+	}	
+	.section_box {
+    	padding: 5rem 0 5rem 0;
+	}
+	.related_post  .blog_block .contents{
+		min-width: 150px;
+	}
+	.press-section .trip_title.text-left {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    min-height: 230px;
+	}
+	.footer-section .col-md-7.mb-80 {
+	    margin-bottom: 10px;
+	    text-align: center;
+	}
+	.footer-section .col-md-3 {
+	    margin-bottom: 50px;
+	    text-align: center!important;
+	}
+	h4.trip_title {
+	    font-size: 20px;
+	    font-weight: 600;
+	    line-height: 26px;
+	    margin-top: 10px;
+	}
+	.accordion .card .card-header .btn-header-link {
+	    padding: 15px;
+	    font-size: 16px;
+	}
+	.accordion {
+	    padding: 5px;
+	}
+	.mt-5, .my-5 {
+	    margin-top: 1rem!important;
+	}
+	.max-5 {
+	    max-height: 650px;
+	    object-fit: cover;
+	}
+	.footer-section .col-md-7, .footer-section .col-md-3 {
+	    max-width: 100%!important;
+	    display: block;
+	    flex: 0 0 100%;
+	}
+	.white-background .col-md-6.content-middle{
+		flex: 0 0 100%;
+    	max-width: 100%;
+    	padding-left: 120px;
+    	padding-right: 120px;
+	}
+	.img-half,.img-half2 {
+	    width: 100%;
+	    display: inline-block;
+	}
+	.price-gray {
+	    width: 100%;
+	    margin-right: 0px;
+	}
+	.vip img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+	    max-height: 300px;
+	    object-fit: cover;
+	    min-width: 150px;    
+	}
+ 
+}
+@media screen and (min-width: 991px) {
+	.paddingleft{
+		padding-left: 0;
+	}
+	.paddingright{
+		padding-right: 0;
+	}
+	.paddingleft30{
+		padding-left: 30px;
+	}
+	.paddingright30{
+		padding-right: 30px;
+	}
+	#basicExampleNav {
+	    display: block;
+	}
+	
+	.modal-body {
+	    padding: 5rem 0.5rem;
+	}
+	.rooms .modal-body {
+	    padding: unset;
+	}
+	#workwithus .modal-content {
+    	background: url(../img/popup.jpg) no-repeat right;
+    	background-size: contain;
+    	background-color: #fff;
+     	border-radius: 8px;
+	}
+	.modal-dialog {
+	    max-width: 800px;
+	    margin: 5.75rem auto;
+	}
+	
+	.events .content-middle{
+	   padding-right: 30px; 
+	}
+	.service-list {
+	    width: 47%;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.service-list:nth-child(odd){
+	    margin-right: 45px;
+	}
+	.nav_items--profiles, #basicExampleNav{
+	    display: block;
+	    width: 100%;
+	}
+
+}
+@media screen and (max-width: 600px) {
+	.why_us_section .section_title{
+
+	}
+	.companies_block li {
+	    margin: 20px auto !important;
+	}
+	.companies_block {
+	    display: block !important;
+	}
+	.image-right img {
+	    padding-left: 0;
+	    max-height: 350px!important;
+	}
+	.image-left img {
+	    padding-right: 0;
+	    max-height: 350px!important;
+	}
+	
+	.social_media_block {
+    flex-direction: column;
+	}
+	
+	.col-md-3 {
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.widget {
+   		 margin-top: 30px;
+	}
+	.hero_banner .banner_text p {
+	    font-weight: 600;
+	    font-size: 2.2rem;
+	}
+	.price_section .col-md-3 {
+	    padding-top: 15px;
+	    border-left: unset;
+	}
+	.check-list-box {
+    	margin-top: 15px;
+	}
+	.vertical_line {    	
+    	display: none;
+	}
+	.check-list-box {	
+	    min-height: unset;
+	}
+	.contents{
+		position: unset !important;
+	}
+	.trip_block img {
+    	padding-bottom: 15px;
+    	padding-left: 0!important;
+	}
+	.trip_inner_section .trip_block {
+    	margin-bottom: 50px;
+	}
+	.main {
+    	width: 100%;
+    }
+    .carousel-slide .image-left img {
+	    padding-right: 0%;
+	    height: auto;
+	}
+	.carousel-slide .image-left .contents {
+	  padding: 2rem;
+	  position: unset;
+	    max-width: unset;
+	    border-bottom: unset;
+	}
+	.carousel-controls {
+    	display: none;
+    }
+    .blog_block .image-mid img {
+	    height: auto;
+	}
+	.blog_block .contents{
+		min-width: 100%;
+		position: relative !important;
+	}
+	.hero_banner {
+    	width: 100%;
+    	height: 60vh;
+	}
+	.work_block .contents {
+	    min-height: 280px;
+	    transform: unset;
+	    margin-top: 15px;
+	}
+	.image-mid .contents{
+		transform: unset;
+	    margin-top: 15px;	
+	}
+	.icon-col {
+	    width: 100%;
+	}
+	[class^=kartra_optin_tpl_].kartra_optin_tpl_0 button.kartra_optin_submit_btn {
+	    width: 50%;
+	}	
+	img.masonry-column:last-child {
+    	-ms-transform: translateY(-50%);
+   		transform: unset;
+	}
+	.mt-5, .my-5 {
+    	margin-top: 1rem!important;
+	}
+	footer form {
+	    margin-top: 2rem;
+	    padding-right: 0rem;
+	}
+	.image-mid .contents {
+	    left: 0%;
+	}
+	.related_post .t_slide{
+		width: 300px;
+	}
+	.testimonial_section .testimonial_slider .t_slide{
+		width: 300px;
+	}
+	.border-dash {
+	    display: none;
+	}
+	i.kartra_optin_icon_template {
+	    display: none;
+	}
+	.group_section .trip_title{
+	  padding: 30px 10px;
+	  text-align: center;
+	  box-shadow: 0 0 30px rgb(0 0 0 / 16%);
+	  border-radius: 5px;
+	  font-size: 2rem;
+	}
+	.white-background .col-md-6.content-middle{
+		flex: 0 0 100%;
+    	max-width: 100%;
+    	padding-left: 20px;
+    	padding-right: 20px;
+	}
+	
+}
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {	
+	header .nav .nav_items--menu li .menu__item {
+	  padding: 1.5rem;
+	}
+	.fixHeader .nav__logo {
+	    width: 25rem;
+	}
+	header .nav__logo {
+    	width: 30rem;
+	}
+	.inner-text{
+		width: 100%;
+	}
+	.banner_text h2 {
+	    font-size: 92px;
+	}
+	.gold-event {
+	    padding: 20px 15px 20px;
+	}
+	.price-gray {
+	    width: 32%;
+	    margin-right: 10px;
+	}
+	.mt-5, .my-5 {
+	    margin-top: 2rem!important;
+	}
+}
+@media screen and (min-width: 767px) and (max-width: 1170px) {	
+	.img-half {
+	    width: 42.3%;
+	}
+	.img-half2 {
+	    width: 57.15%;
+	}
+}
+@media screen and (min-width: 1250px) {	
+.rooms .modal-dialog {
+	    max-width: 1200px;
+	    margin: 7rem auto;
+	}
+}
+@media screen and (max-width: 1300px) {	
+
+	.work-event .image-right .contents {
+	    top: 0;
+	    max-width: 530px;
+	}
+}

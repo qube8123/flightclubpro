@@ -1,0 +1,116 @@
+.microsegment-metarange {
+    display: grid;
+    gap: 18px;
+    padding: 24px;
+    color: #2f2418;
+    background: #fffaf0;
+    border: 1px solid #f1d7a5;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
+}
+
+.microsegment-metarange__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.microsegment-metarange__title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.microsegment-metarange__meta {
+    color: #8a6d3b;
+    font-size: 0.875rem;
+}
+
+.microsegment-metarange__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    color: #ffffff;
+    background: #d97706;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.microfixed-polyrotate {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    padding: 20px;
+    background: #fffbeb;
+    border-radius: 10px;
+}
+
+.microfixed-polyrotate__item {
+    padding: 18px;
+    background: #fffaf0;
+    border: 1px solid #f1d7a5;
+    border-radius: calc(10px - 2px);
+}
+
+.microfixed-polyrotate__value {
+    color: #d97706;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.microfixed-polyrotate__label {
+    margin-top: 8px;
+    color: #8a6d3b;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.polyconnect-microdiffuser {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 14px;
+    padding: 18px;
+    background: #fffaf0;
+    border: 1px solid #f1d7a5;
+    border-radius: 10px;
+}
+
+.polyconnect-microdiffuser__field {
+    display: grid;
+    gap: 6px;
+    min-width: 180px;
+    flex: 1 1 220px;
+}
+
+.polyconnect-microdiffuser__input {
+    width: 100%;
+    padding: 11px 12px;
+    color: #2f2418;
+    background: #fffbeb;
+    border: 1px solid #f1d7a5;
+    border-radius: 10px;
+    outline: none;
+}
+
+.polyconnect-microdiffuser__input:focus {
+    border-color: #d97706;
+    box-shadow: 0 0 0 3px #fde68a;
+}
+
+@media (max-width: 720px) {
+    .microsegment-metarange {
+        padding: 16px;
+    }
+    .microfixed-polyrotate {
+        padding: 16px;
+    }
+    .polyconnect-microdiffuser {
+        padding: 16px;
+    }
+}
